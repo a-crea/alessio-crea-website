@@ -1,17 +1,26 @@
 /* Custom fonts here */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   background-color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   @apply text-gray-900;
 }
 
 .btn {
   @apply normal-case;
+
+  & i {
+    @apply text-xl;
+  }
+}
+
+a.btn {
+  line-height: normal;
 }
 
 .title-hero {

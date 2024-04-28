@@ -6,19 +6,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // eslint-disable-next-line no-undef
 export default defineNuxtConfig({
-  preset: 'node-server',
+  preset: "node-server",
 
-  modules: [
-    '@nuxtjs/tailwindcss',
-    'nuxt-headlessui',
-    'nuxt-gtag',
-  ],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-headlessui"],
 
-  gtag: {
-    id: 'G-M1KERXTK1H', // TODO: Add your google analytics 4 tag here
-  },
-
-  srcDir: './src',
+  srcDir: "./src",
 
   runtimeConfig: {
     public: {
@@ -28,9 +20,9 @@ export default defineNuxtConfig({
 
   plugins: [
     {
-      src: '@/plugins/aos',
+      src: "@/plugins/aos",
       ssr: false,
-      mode: 'client',
+      mode: "client",
     },
   ],
 
@@ -38,35 +30,36 @@ export default defineNuxtConfig({
     head: {
       link: [
         {
-          rel: 'stylesheet',
-          href: 'https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css',
+          rel: "stylesheet",
+          href: "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css",
         },
+        { rel: "icon", type: "image/png", href: "/favicon.png" },
       ],
     },
   },
 
   tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
-    configPath: 'tailwind.config',
+    cssPath: "~/assets/css/tailwind.css",
+    configPath: "tailwind.config",
     exposeConfig: false,
     exposeLevel: 2,
     config: {},
-    injectPosition: 'first',
+    injectPosition: "first",
     viewer: true,
   },
 
   headlessui: {
-    prefix: 'Headless',
+    prefix: "Headless",
   },
 
   build: {
-    extend (config, ctx) {
+    extend(config, ctx) {
       config.resolve.symlinks = false;
     },
   },
 
   image: {
-    dir: 'assets/images',
+    dir: "assets/images",
     screens: {
       xs: 320,
       sm: 640,
@@ -74,8 +67,8 @@ export default defineNuxtConfig({
       lg: 1024,
       xl: 1280,
       xxl: 1536,
-      '2xl': 1536,
-      '3xl': 1920,
+      "2xl": 1536,
+      "3xl": 1920,
     },
   },
 

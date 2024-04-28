@@ -5,14 +5,14 @@ module.exports = {
   root: true,
 
   parserOptions: {
-    parser: '@babel/eslint-parser',
+    parser: "@babel/eslint-parser",
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
-    sourceType: 'module' // Allows for the use of imports
+    sourceType: "module", // Allows for the use of imports
   },
 
   env: {
     browser: true,
-    'vue/setup-compiler-macros': true
+    "vue/setup-compiler-macros": true,
   },
 
   // Rules order is important, please avoid shuffling them
@@ -23,60 +23,59 @@ module.exports = {
     // Uncomment any of the lines below to choose desired strictness,
     // but leave only one uncommented!
     // See https://eslint.vuejs.org/rules/#available-rules
-    'plugin:vue/vue3-essential', // Priority A: Essential (Error Prevention)
+    "plugin:vue/vue3-essential", // Priority A: Essential (Error Prevention)
     // 'plugin:vue/vue3-strongly-recommended', // Priority B: Strongly Recommended (Improving Readability)
     // 'plugin:vue/vue3-recommended', // Priority C: Recommended (Minimizing Arbitrary Choices and Cognitive Overhead)
 
-    'standard'
-    
+    "standard",
   ],
 
   plugins: [
     // https://eslint.vuejs.org/user-guide/#why-doesn-t-it-work-on-vue-files
     // required to lint *.vue files
-    'vue',
-    
+    "vue",
   ],
 
   globals: {
-    ga: 'readonly', // Google Analytics
-    process: 'readonly',
-    chrome: 'readonly'
+    ga: "readonly", // Google Analytics
+    process: "readonly",
+    chrome: "readonly",
   },
 
   // add your custom rules here
   rules: {
     // allow async-await
-    'generator-star-spacing': 'off',
+    "generator-star-spacing": "off",
     // allow paren-less arrow functions
-    'arrow-parens': 'off',
-    'one-var': 'off',
+    "arrow-parens": "off",
+    "one-var": "off",
 
-    'import/first': 'off',
-    'import/named': 'error',
-    'import/namespace': 'error',
-    'import/default': 'error',
-    'import/export': 'error',
-    'import/extensions': 'off',
-    'import/no-unresolved': 'off',
-    'import/no-extraneous-dependencies': 'off',
-    'prefer-promise-reject-errors': 'off',
+    "import/first": "off",
+    "import/named": "error",
+    "import/namespace": "error",
+    "import/default": "error",
+    "import/export": "error",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "prefer-promise-reject-errors": "off",
 
     // allow debugger during development only
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
 
     // custom
-    'semi': [2, 'always'],
-    'space-before-function-paren': [2, 'always'],
-    'keyword-spacing': [2, { before: true, after: true }],
-    'space-before-blocks': [2, 'always'],
-    'comma-dangle': [2, 'always-multiline'],
-    'no-console': 'off',
-    'no-multi-str': 'off',
-    'curly': 1,
-    'no-undef': 'off',
+    semi: [2, "always"],
+    "space-before-function-paren": [2, "always"],
+    "keyword-spacing": [2, { before: true, after: true }],
+    "space-before-blocks": [2, "always"],
+    "comma-dangle": [2, "always-multiline"],
+    "no-console": "off",
+    "no-multi-str": "off",
+    curly: 1,
+    "no-undef": "off",
+    quotes: [2, "backtick", "single"],
 
     // plugins
-    'vue/multi-word-component-names': 'off'
-  }
-}
+    "vue/multi-word-component-names": "off",
+  },
+};
