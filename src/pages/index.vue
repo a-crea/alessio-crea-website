@@ -21,7 +21,7 @@
             </h1>
             <div
               data-aos="fade-down"
-              :data-aos-delay="EOS_DURATION + 100"
+              :data-aos-delay="500"
               :data-aos-duration="EOS_DURATION"
               class="flex flex-col gap-3 md:flex-row md:text-lg mb-6"
             >
