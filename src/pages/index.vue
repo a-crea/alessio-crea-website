@@ -44,13 +44,13 @@
           </div>
           <div class="basis-1/2 flex justify-center">
             <div
-              class="relative rounded-full bg-gradient-to-br from-neutral to-primary border-primary h-72 w-72 md:w-96 md:h-96 overflow-hidden"
+              class="relative flex justify-center rounded-full bg-gradient-to-br from-neutral to-primary border-primary h-72 w-72 md:w-96 md:h-96 overflow-hidden"
               data-aos="fade-left"
             >
               <img
                 src="@/assets/images/profile.png"
                 alt="Alessio Crea"
-                class="h-72 md:h-96 max-w-none absolute bottom-0 grayscale"
+                class="h-72 md:h-96 max-w-none grayscale"
                 data-aos="zoom-in-up"
                 :data-aos-duration="EOS_DURATION - 300"
               />
